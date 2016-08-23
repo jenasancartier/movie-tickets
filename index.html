@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" text="text/css">
+    <link href="css/styles.css" rel="stylesheet" text="text/css">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="jumbotron">Movie Ticket Pricing</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <form id="movie-ticket">
+              <div class="form-group">
+                <label for="movie-title">Movie title:</label>
+                <select class="form-control" id="movie-title">
+                  <option disabled selected value> -- select a movie -- </option>
+                  <option>Suicide Squad</option>
+                  <option>Star Trek</option>
+                  <option>Ghostbusters</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="movie-time">Show time:</label>
+                <select class="form-control" id="movie-time">
+                  <option disabled selected value> -- select a show time -- </option>
+                  <option>Morning matinee</option>
+                  <option>Afternoon matinee</option>
+                  <option>Evening</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="age-range">Movie title:</label>
+                <select class="form-control" id="age-range">
+                  <option disabled selected value> -- select an age -- </option>
+                  <option>Child</option>
+                  <option>Adult</option>
+                  <option>Senior</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Get ticket price!</button>
+            </form>
+
+        </div>
+      </div>
+        <div class="output">
+          <h2>Your ticket information:</h2>
+          <ul id="ticket-info">
+          </ul>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
